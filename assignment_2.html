@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Workspace</title>
+	</head>
+	<body>
+		<div id="page_container"> 
+			<p id ="data"></p>
+		</div>
+			<script>
+				var data = 1;
+				for(var i = 2; i <= 100; i++ )
+				{
+
+					if( i%3 == 0 && i%5 == 0)
+					{
+						data += "</br>FizzBuzz";
+					}
+					else if(i%5 == 0)
+					{
+						data += "</br>Buzz";
+					}
+					else if(i%3 == 0)
+					{
+						data += "</br>Fizz";
+					}
+					else
+					{
+						data += "</br>"+i;
+					}
+				}
+				document.getElementById('data').innerHTML = data;
+			</script>
+
+	
+	</body>
+</html>
